@@ -8,12 +8,3 @@
  export function sub(a, b) {
   return a - b;
 }
-
-
-
-// ✅ Add default export (optional)
-// export default {
-//   add,
-//   multiply,
-//   sub
-// };
