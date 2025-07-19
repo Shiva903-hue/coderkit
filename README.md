@@ -68,7 +68,7 @@ import { add, subtract, multiply, divide, square, cube, power, average } from 'c
 | `power(a, b)`    | Raises `a` to the power of `b`              | `power(2, 3)` ➝ `8`     |
 | `average(a, b)`  | Returns average of two numbers              | `average(4, 6)` ➝ `5`   |
 
-
+```
 ## 🌐 Open Source & Contributions
 
 This package is open-source and community-driven.  
