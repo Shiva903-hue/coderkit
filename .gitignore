@@ -1,1 +1,29 @@
+# Node.js dependencies
 node_modules/
+
+# Build artifacts (if you use any bundler in future)
+dist/
+build/
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+
+# Optional: OS + editor-specific
+.vscode/
+.idea/
+
+# Optional: test coverage and temp files
+coverage/
+*.log
+temp/

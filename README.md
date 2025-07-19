@@ -46,15 +46,28 @@ add("2", 3); // ❌ Throws error: "Both arguments must be numbers"
 
 ---
 
-## 📂 Currently Available Functions
+## ✅ New Functions Added in v1.0.1
 
-| Function   | Description                   |
-|------------|-------------------------------|
-| `add(a,b)`       | Returns the sum of two numbers        |
-| `subtract(a,b)`  | Returns the difference (a - b)         |
-| `multiply(a,b)`  | Returns the product of two numbers     |
+This version introduces a variety of **daily-use math and utility functions**. Below are the details:
 
 ---
+
+### 📂 Math Functions
+
+```js
+import { add, subtract, multiply, divide, square, cube, power, average } from 'coderkit/math';
+
+| Function         | Description                                 | Example                 |
+| ---------------- | ------------------------------------------- | ----------------------- |
+| `add(a, b)`      | Returns sum of two numbers                  | `add(2, 3)` ➝ `5`       |
+| `subtract(a, b)` | Returns difference of two numbers           | `subtract(5, 3)` ➝ `2`  |
+| `multiply(a, b)` | Returns product of two numbers              | `multiply(4, 5)` ➝ `20` |
+| `divide(a, b)`   | Returns quotient (safe divide with 0 check) | `divide(10, 2)` ➝ `5`   |
+| `square(n)`      | Returns square of a number                  | `square(4)` ➝ `16`      |
+| `cube(n)`        | Returns cube of a number                    | `cube(3)` ➝ `27`        |
+| `power(a, b)`    | Raises `a` to the power of `b`              | `power(2, 3)` ➝ `8`     |
+| `average(a, b)`  | Returns average of two numbers              | `average(4, 6)` ➝ `5`   |
+
 
 ## 🌐 Open Source & Contributions
 

@@ -1,0 +1,9 @@
+# System-specific
+desktop.ini
+
+# Source control
+.gitignore
+
+# Project metadata
+README.md
+
