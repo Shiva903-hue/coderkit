@@ -46,27 +46,27 @@ add("2", 3); // ❌ Throws error: "Both arguments must be numbers"
 
 ---
 
-## ✅ New Functions Added in v1.0.1
+## ✅ New Functions Added in v1.0.3
 
-This version introduces a variety of **daily-use math and utility functions**. Below are the details:
+This version introduces a variety of **daily-use Object functions**. Below are the details:
 
 ---
 
 ### 📂 Math Functions
 
 ```js
-import { add, subtract, multiply, divide, square, cube, power, average } from 'coderkit/math';
+import {deepClone,isEmptyObject,mergeObjects, getNestedValue,omit,pick,deepFreeze, objectToQueryString} from 'coderkit/object';
 
-| Function         | Description                                 | Example                 |
-| ---------------- | ------------------------------------------- | ----------------------- |
-| `add(a, b)`      | Returns sum of two numbers                  | `add(2, 3)` ➝ `5`       |
-| `subtract(a, b)` | Returns difference of two numbers           | `subtract(5, 3)` ➝ `2`  |
-| `multiply(a, b)` | Returns product of two numbers              | `multiply(4, 5)` ➝ `20` |
-| `divide(a, b)`   | Returns quotient (safe divide with 0 check) | `divide(10, 2)` ➝ `5`   |
-| `square(n)`      | Returns square of a number                  | `square(4)` ➝ `16`      |
-| `cube(n)`        | Returns cube of a number                    | `cube(3)` ➝ `27`        |
-| `power(a, b)`    | Raises `a` to the power of `b`              | `power(2, 3)` ➝ `8`     |
-| `average(a, b)`  | Returns average of two numbers              | `average(4, 6)` ➝ `5`   |
+| Function                  | Description                                               | Example                                    |
+|--------------------------|-----------------------------------------------------------|--------------------------------------------|
+| `deepClone(obj)`         | Creates a deep copy of an object                          | `deepClone({a:{b:1}})` ➝ `{a:{b:1}}`        |
+| `isEmptyObject(obj)`     | Checks if object has no keys                              | `isEmptyObject({})` ➝ `true`               |
+| `mergeObjects(a, b)`     | Shallow merges two objects                                | `mergeObjects({a:1}, {b:2})` ➝ `{a:1,b:2}` |
+| `getNestedValue(obj, p)` | Retrieves value from nested path                          | `getNestedValue(obj, 'user.name')`         |
+| `omit(obj, keys)`        | Returns object without specified keys                     | `omit({a:1,b:2}, ['b'])` ➝ `{a:1}`         |
+| `pick(obj, keys)`        | Returns object with only specified keys                   | `pick({a:1,b:2}, ['a'])` ➝ `{a:1}`         |
+| `deepFreeze(obj)`        | Recursively freezes object (makes it immutable)           | `deepFreeze(config)`                       |
+| `objectToQueryString(o)` | Converts object to URL query string                       | `objectToQueryString({a:1,b:2})` ➝ `"a=1&b=2"` |
 
 ```
 ## 🌐 Open Source & Contributions
