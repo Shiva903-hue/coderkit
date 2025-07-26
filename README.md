@@ -52,7 +52,7 @@ This version introduces a variety of **daily-use Object functions**. Below are t
 
 ---
 
-### 📂 Math Functions
+### 📂 Objects Functions
 
 ```js
 import {deepClone,isEmptyObject,mergeObjects, getNestedValue,omit,pick,deepFreeze, objectToQueryString} from 'coderkit/object';
