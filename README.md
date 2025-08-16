@@ -46,27 +46,34 @@ add("2", 3); // ❌ Throws error: "Both arguments must be numbers"
 
 ---
 
-## ✅ New Functions Added in v1.0.3
+## ✅ New Functions Added in v1.0.4
 
-This version introduces a variety of **daily-use Object functions**. Below are the details:
+This version introduces a variety of **daily-use String functions**. Below are the details:
 
 ---
 
-### 📂 Objects Functions
+### 📂 String Functions
 
 ```js
-import {deepClone,isEmptyObject,mergeObjects, getNestedValue,omit,pick,deepFreeze, objectToQueryString} from 'coderkit/object';
-
-| Function                  | Description                                               | Example                                    |
-|--------------------------|-----------------------------------------------------------|--------------------------------------------|
-| `deepClone(obj)`         | Creates a deep copy of an object                          | `deepClone({a:{b:1}})` ➝ `{a:{b:1}}`        |
-| `isEmptyObject(obj)`     | Checks if object has no keys                              | `isEmptyObject({})` ➝ `true`               |
-| `mergeObjects(a, b)`     | Shallow merges two objects                                | `mergeObjects({a:1}, {b:2})` ➝ `{a:1,b:2}` |
-| `getNestedValue(obj, p)` | Retrieves value from nested path                          | `getNestedValue(obj, 'user.name')`         |
-| `omit(obj, keys)`        | Returns object without specified keys                     | `omit({a:1,b:2}, ['b'])` ➝ `{a:1}`         |
-| `pick(obj, keys)`        | Returns object with only specified keys                   | `pick({a:1,b:2}, ['a'])` ➝ `{a:1}`         |
-| `deepFreeze(obj)`        | Recursively freezes object (makes it immutable)           | `deepFreeze(config)`                       |
-| `objectToQueryString(o)` | Converts object to URL query string                       | `objectToQueryString({a:1,b:2})` ➝ `"a=1&b=2"` |
+import {capitalize, toLower, toUpper, reverseString, isPalindrome, wordCount, trimSpaces, repeatString, contains, firstN, lastN, toKebabCase, toCamelCase, padLeft, padRight} from 'coderkit/object';
+```
+| Function              | Description                                | Example                                           |
+|-----------------------|--------------------------------------------|---------------------------------------------------|
+| `capitalize(str)`     | Capitalizes first letter                   | `capitalize("hello")` ➝ `"Hello"`                 |
+| `toLower(str)`        | Converts string to lowercase               | `toLower("HELLO")` ➝ `"hello"`                   |
+| `toUpper(str)`        | Converts string to uppercase               | `toUpper("hello")` ➝ `"HELLO"`                   |
+| `reverseString(str)`  | Reverses a string                          | `reverseString("abc")` ➝ `"cba"`                 |
+| `isPalindrome(str)`   | Checks if a string is a palindrome         | `isPalindrome("madam")` ➝ `true`                 |
+| `wordCount(str)`      | Counts words in a string                   | `wordCount("this is coderkit")` ➝ `3`            |
+| `trimSpaces(str)`     | Removes spaces from both ends              | `trimSpaces("  hi  ")` ➝ `"hi"`                  |
+| `repeatString(s, n)`  | Repeats string `n` times                   | `repeatString("hi", 3)` ➝ `"hihihi"`             |
+| `contains(s, sub)`    | Checks if string contains substring        | `contains("hello", "ell")` ➝ `true`              |
+| `firstN(s, n)`        | Returns first `n` characters               | `firstN("hello", 2)` ➝ `"he"`                    |
+| `lastN(s, n)`         | Returns last `n` characters                | `lastN("hello", 2)` ➝ `"lo"`                     |
+| `toKebabCase(str)`    | Converts to kebab-case                     | `toKebabCase("Hello World")` ➝ `"hello-world"`   |
+| `toCamelCase(str)`    | Converts to camelCase                      | `toCamelCase("hello_world")` ➝ `"helloWorld"`    |
+| `padLeft(s, len, ch)` | Pads string on left                        | `padLeft("5", 3, "0")` ➝ `"005"`                 |
+| `padRight(s, len,ch)` | Pads string on right                       | `padRight("5", 3, "0")` ➝ `"500"`                |
 
 ```
 ## 🌐 Open Source & Contributions
