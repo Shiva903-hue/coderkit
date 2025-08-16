@@ -46,7 +46,7 @@ add("2", 3); // ❌ Throws error: "Both arguments must be numbers"
 
 ---
 
-## ✅ New Functions Added in v1.0.4
+## ✅ New Functions Added in v1.0.5
 
 This version introduces a variety of **daily-use String functions**. Below are the details:
 
