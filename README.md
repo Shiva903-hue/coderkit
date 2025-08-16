@@ -75,7 +75,7 @@ import {capitalize, toLower, toUpper, reverseString, isPalindrome, wordCount, tr
 | `padLeft(s, len, ch)` | Pads string on left                        | `padLeft("5", 3, "0")` ➝ `"005"`                 |
 | `padRight(s, len,ch)` | Pads string on right                       | `padRight("5", 3, "0")` ➝ `"500"`                |
 
-```
+---
 ## 🌐 Open Source & Contributions
 
 This package is open-source and community-driven.  
