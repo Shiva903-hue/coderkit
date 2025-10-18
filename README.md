@@ -49,10 +49,10 @@ add("2", 3); // ❌ Throws error: "Both arguments must be numbers"
 
 ---
 
-## ✅ New Functions Added in v1.0.5
+## ✅ New Functions Added in v1.1.0
 
 
-## 💰 Banking & Finance Functions (v1.0.6)
+## 💰 Banking & Finance Functions (v1.1.0)
 
 This version adds a powerful set of **financial and banking-related functions** — perfect for calculations like interest, loans, and investment analysis.
 
