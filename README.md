@@ -4,6 +4,9 @@
 > A simple and secure utility toolkit with essential JavaScript functions — built for speed, safety, and developer convenience.
 
 ---
+### Site is live now You can check the detail form
+>[coderkit↗](https://coderkit.vercel.app/)
+---
 
 ## ✨ Features
 
@@ -48,32 +51,37 @@ add("2", 3); // ❌ Throws error: "Both arguments must be numbers"
 
 ## ✅ New Functions Added in v1.0.5
 
-This version introduces a variety of **daily-use String functions**. Below are the details:
 
----
+## 💰 Banking & Finance Functions (v1.0.6)
 
-### 📂 String Functions
+This version adds a powerful set of **financial and banking-related functions** — perfect for calculations like interest, loans, and investment analysis.
 
 ```js
-import {capitalize, toLower, toUpper, reverseString, isPalindrome, wordCount, trimSpaces, repeatString, contains, firstN, lastN, toKebabCase, toCamelCase, padLeft, padRight} from 'coderkit/object';
+import {
+  simpleInterest,
+  compoundInterest,
+  calculateEMI,
+  totalLoanPayment,
+  totalInterestPaid,
+  recurringDepositValue,
+  netPresentValue,
+  returnOnInvestment,
+  percentageChange
+} from 'coderkit/finance';
 ```
-| Function              | Description                                | Example                                           |
-|-----------------------|--------------------------------------------|---------------------------------------------------|
-| `capitalize(str)`     | Capitalizes first letter                   | `capitalize("hello")` ➝ `"Hello"`                 |
-| `toLower(str)`        | Converts string to lowercase               | `toLower("HELLO")` ➝ `"hello"`                   |
-| `toUpper(str)`        | Converts string to uppercase               | `toUpper("hello")` ➝ `"HELLO"`                   |
-| `reverseString(str)`  | Reverses a string                          | `reverseString("abc")` ➝ `"cba"`                 |
-| `isPalindrome(str)`   | Checks if a string is a palindrome         | `isPalindrome("madam")` ➝ `true`                 |
-| `wordCount(str)`      | Counts words in a string                   | `wordCount("this is coderkit")` ➝ `3`            |
-| `trimSpaces(str)`     | Removes spaces from both ends              | `trimSpaces("  hi  ")` ➝ `"hi"`                  |
-| `repeatString(s, n)`  | Repeats string `n` times                   | `repeatString("hi", 3)` ➝ `"hihihi"`             |
-| `contains(s, sub)`    | Checks if string contains substring        | `contains("hello", "ell")` ➝ `true`              |
-| `firstN(s, n)`        | Returns first `n` characters               | `firstN("hello", 2)` ➝ `"he"`                    |
-| `lastN(s, n)`         | Returns last `n` characters                | `lastN("hello", 2)` ➝ `"lo"`                     |
-| `toKebabCase(str)`    | Converts to kebab-case                     | `toKebabCase("Hello World")` ➝ `"hello-world"`   |
-| `toCamelCase(str)`    | Converts to camelCase                      | `toCamelCase("hello_world")` ➝ `"helloWorld"`    |
-| `padLeft(s, len, ch)` | Pads string on left                        | `padLeft("5", 3, "0")` ➝ `"005"`                 |
-| `padRight(s, len,ch)` | Pads string on right                       | `padRight("5", 3, "0")` ➝ `"500"`                |
+
+| Function                         | Description                                       | Example                                               |
+| -------------------------------- | ------------------------------------------------- | ----------------------------------------------------- |
+| `simpleInterest(P, R, T)`        | Calculates Simple Interest                        | `simpleInterest(10000, 5, 2)` ➝ `1000`                |
+| `compoundInterest(P, R, T)`      | Calculates Compound Interest                      | `compoundInterest(10000, 5, 2)` ➝ `1025`              |
+| `calculateEMI(P, rate, N)`       | Calculates monthly loan EMI                       | `calculateEMI(500000, 8, 60)` ➝ `10138.95`            |
+| `totalLoanPayment(emi, n)`       | Calculates total payment over the loan period     | `totalLoanPayment(10138.95, 60)` ➝ `608337`           |
+| `totalInterestPaid(total, P)`    | Calculates total interest paid on a loan          | `totalInterestPaid(608337, 500000)` ➝ `108337`        |
+| `recurringDepositValue(M, R, T)` | Calculates maturity value of a recurring deposit  | `recurringDepositValue(1000, 7, 5)` ➝ `72977.49`      |
+| `netPresentValue(flows, rate)`   | Calculates Net Present Value of future cash flows | `netPresentValue([2000, 3000, 4000], 10)` ➝ `7246.82` |
+| `returnOnInvestment(gain, cost)` | Calculates ROI percentage                         | `returnOnInvestment(1200, 1000)` ➝ `20`               |
+| `percentageChange(old, new)`     | Calculates percentage growth or decline           | `percentageChange(1000, 1200)` ➝ `20`                 |
+
 
 ---
 ## 🌐 Open Source & Contributions
@@ -92,6 +100,7 @@ We welcome:
 
 ---
 
+---
 ## 📄 License
 
 MIT © [Shivam Waghmare](https://github.com/Shiva903-hue)
