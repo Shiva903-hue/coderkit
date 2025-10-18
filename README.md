@@ -20,7 +20,7 @@
 ## 📦 Installation
 
 ```bash
-npm install coderkit
+npm install coderkit@latest
 ```
 
 ---
